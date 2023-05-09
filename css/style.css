@@ -2,3 +2,129 @@
 * {
   margin: 0;
   padding: 0; }
+
+.fondo {
+  background: red;
+  font-size: larger;
+  font-family: formula_bold; }
+
+.centrado {
+  align-content: center; }
+
+@font-face {
+  font-family: formula_1;
+  src: url(../formula-1/Formula1.otf); }
+
+@font-face {
+  font-family: formula_bold;
+  src: url(../F1FontFiles/Formula1-Bold.otf);
+  color: white; }
+
+@font-face {
+  font-family: formula_regular;
+  src: url(../F1FontFiles/Formula1-Regular.otf); }
+
+.letrapiola {
+  font-family: formula_1; }
+
+.letracopada {
+  font-family: formula_regular; }
+
+.letracheta {
+  font-family: forumula_bold; }
+
+body {
+  background: #1a2a6c;
+  background: -webkit-linear-gradient(to right, #ff0000, #ee5353, #ffffff);
+  background: linear-gradient(to right, #ff0000, #ee5353, #ffffff);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
+.footer div {
+  background-color: black;
+  min-height: 10vh;
+  color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+
+.prueba {
+  background: linear-gradient(to right, #ff0000, #ee5353, #ffffff);
+  color: black; }
+
+.fafa {
+  border: 2px solid #0000002d;
+  padding: 8px; }
+
+.footer a {
+  text-decoration: none;
+  color: red; }
+
+.form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px #000001;
+  border-radius: 20px;
+  text-align: center;
+  width: 340px; }
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
+h2 {
+  color: black;
+  font-size: 35px; }
+
+label {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px; }
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #fffb00;
+  border: 2px solid #000000;
+  color: #00ff11;
+  outline: none; }
+
+input::placeholder, textarea::placeholder {
+  color: black; }
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center; }
+
+.form-txt a {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none; }
+
+.main {
+  min-height: 70vh; }
+
+.main-index {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2%; }
+
+.info {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main div img {
+  max-width: 350px;
+  max-height: 300px; }
