@@ -1,28 +1,10 @@
 /*Variables */
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
 
-
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
     margin: 0;
     padding: 0;
 }
-
-.fondo {
-    background: red;
-    font-size: larger;
-    font-family: formula_bold;
-}
-
-
-.centrado {
-    align-content: center;
-}
-
 
 @font-face {
     font-family: formula_1;
@@ -45,7 +27,7 @@
 }
 
 .letracopada {
-    font-family: formula_regular
+    font-family: formula_regular;
 }
 
 .letracheta {
@@ -59,21 +41,48 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
-
 }
 
-.footer div {
-    background-color: black;
-    min-height: 10vh;
-    color: rgb(255, 0, 0);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-
+.header {
+    &fondo {
+        background: red;
+        font-size: larger;
+        font-family: formula_bold;
+    }
 }
+
+
+
+.footer {
+    text-decoration: none;
+    color: red;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    div {
+        background-color: black;
+        min-height: 10vh;
+        color: red;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-a {
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 .prueba {
     background: linear-gradient(to right, #ff0000, #ee5353, #ffffff);
@@ -85,25 +94,16 @@ body {
     padding: 8px;
 }
 
-
-.form {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgb(0, 0, 1);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
+h2,
+.h2 {
+    color: black;
+    font-size: 35px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    text-align: left;
-}
-
-h2 {
-    color: black;
-    font-size: 35px;
-}
+    text-align: left; }
 
 label {
     color: black;
@@ -111,6 +111,8 @@ label {
     font-weight: 600;
     margin-bottom: 2px;
 }
+
+
 
 input,
 textarea {
@@ -142,7 +144,6 @@ textarea::placeholder {
     text-decoration: none;
 }
 
-
 .main {
     min-height: 70vh;
 }
@@ -172,20 +173,73 @@ textarea::placeholder {
     font-size: 300%;
 }
 
-.tabla-uno{text-align: center; max-width: 100%; overflow-x: auto;}
+.tabla-uno {
+    text-align: center;
+    max-width: 100%;
+    overflow-x: auto;
+}
 
 .cuerpo-texto {
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     font-size: 150%;
-
 }
 
-.team-standings {text-decoration: underline;text-align: left;}
+.team-standings {
+    text-decoration: underline;
+    text-align: left;
+}
 
-.footer a {
+
+.nav-link-prueba {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
     text-decoration: none;
-    color: red;
-    padding-left: 0px;
-    padding-right: 0px;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link-prueba {
+        transition: none;
+    }
+}
+.nav-link-prueba:hover,
+.nav-link-prueba:focus {
+    color: var(--bs-nav-link-hover-color);
+}
+
+.nav-link-prueba:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.nav-link-prueba.disabled {
+    color: var(--bs-nav-link-disabled-color);
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+.boton-chico {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: whitesmoke;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
